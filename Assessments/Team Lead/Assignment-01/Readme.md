@@ -1,5 +1,7 @@
 # Assignment 01
 
+## Team Lead - Sayad Pervez B
+
 ## Home Automation in TinkerCAD
 
 ### [Click this link to view project in TinkerCAD](https://www.tinkercad.com/things/7znFkm7BxNY?sharecode=3Sj0NNPE3eGHWVqjqUU8dT2SPjxrkFNjiLX1PKpSKOc)

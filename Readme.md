@@ -1,18 +1,18 @@
 # IBM Project
 
-## IBM IOT BASED TRAFFIC SIGNS BILLBOARD PROJECT
+## Signs with Smart Connectivity for Better Road Safety
 
-### College
-Rajalakshmi Engineering College, Thandalam
+### Team :
 
-### Department
-Electronics and Communication Engineering
-
-### Team Members :
-1. Sayad Pervez B
-2. Ulagaraja J
-3. Yuvasri M
-4. Yuvashree R
-
-### Assignment 01 : Home Automation in TinkerCAD
-[Click this link to view Assignment 01](./Assignment-01/Readme.md)
+#### Team Lead :
+- Sayad Pervez B
+    - [Assignment 01 : Home Automation in TinkerCAD](./Assessments/Team%20Lead/Assignment-01/Readme.md)
+#### M1 Lead
+- Ulagaraja J
+    - [Assignment 01 : Home Automation in TinkerCAD](./Assessments/M1%20Lead/Readme.md)
+#### M2 Lead
+- Yuvashree R
+    - [Assignment 01 : Home Automation in TinkerCAD](./Assessments/M2%20Lead/Readme.md)
+#### M3 Lead
+- Yuvasri M
+    - [Assignment 01 : Home Automation in TinkerCAD](./Assessments/M3%20Lead/Readme.md)
