@@ -2,7 +2,7 @@
 
 ## Signs with Smart Connectivity for Better Road Safety
 
-### Team :
+### Assignments :
 
 #### Team Lead :
 - Sayad Pervez B
@@ -16,3 +16,14 @@
 #### Team Member 3
 - Yuvasri M
     - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Member%203/Assignment-01/Readme.md)
+
+---
+
+### Project Design & Planning :
+- Ideation Phase
+    - [Empathy Map](./Project%20Design%20%26%20Planning/Ideation%20Phase/Empathy%20Map.pdf)
+    - [Literature Survey](./Project%20Design%20%26%20Planning/Ideation%20Phase/Literature%20Survey.pdf)
+    - [Ideation]()
+- Project Design Phase 1
+- Project Design Phase 2
+- Project Planning
