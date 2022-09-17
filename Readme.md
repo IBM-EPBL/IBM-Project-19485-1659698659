@@ -6,13 +6,13 @@
 
 #### Team Lead :
 - Sayad Pervez B
-    - [Assignment 01 : Home Automation in TinkerCAD](./Assessments/Team%20Lead/Assignment-01/Readme.md)
-#### M1 Lead
+    - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Lead/Assignment-01/Readme.md)
+#### Team Member 1
 - Ulagaraja J
-    - [Assignment 01 : Home Automation in TinkerCAD](./Assessments/M1%20Lead/Assignment-01/Readme.md)
-#### M2 Lead
+    - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Member%201/Assignment-01/Readme.md)
+#### Team Member 2
 - Yuvashree R
-    - [Assignment 01 : Home Automation in TinkerCAD](./Assessments/M2%20Lead/Assignment-01/Readme.md)
-#### M3 Lead
+    - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Member%202/Assignment-01/Readme.md)
+#### Team Member 3
 - Yuvasri M
-    - [Assignment 01 : Home Automation in TinkerCAD](./Assessments/M3%20Lead/Assignment-01/Readme.md)
+    - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Member%203/Assignment-01/Readme.md)
