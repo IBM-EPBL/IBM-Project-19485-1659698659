@@ -9,6 +9,8 @@
 ### Program Code :
 ```python
 # Python code
+# use Python3.8 or higher (F-strings used for formatting)
+
 from random import randint as ri
 from time import sleep as delay
 from os import system as cmd

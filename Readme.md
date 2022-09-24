@@ -7,6 +7,7 @@
 #### Team Lead :
 - Sayad Pervez B
     - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Lead/Assignment-01/Readme.md)
+    - [Assignment 02 : Python Program to Simulate Sensor Values](./Assignments/Team%20Lead/Assignment-02/Readme.md)
 #### Team Member 1
 - Ulagaraja J
     - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Member%201/Assignment-01/Readme.md)
