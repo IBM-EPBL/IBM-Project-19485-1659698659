@@ -15,6 +15,8 @@ while(True):
     if(not(25<humdty<75)):
         print("Unbearable Humidity")
 
+    print("\n\n")
+
     sleep(1)
     iterator+=1
 
