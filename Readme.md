@@ -2,6 +2,8 @@
 
 ## Signs with Smart Connectivity for Better Road Safety
 
+## Team ID : PNT2022TMID02450
+
 ### Assignments :
 
 #### Team Lead :
@@ -29,5 +31,6 @@
     - [Literature Survey](./Project%20Design%20%26%20Planning/Ideation%20Phase/Literature%20Survey.pdf)
     - [Ideation](./Project%20Design%20%26%20Planning/Ideation%20Phase/Ideation.pdf)
 - Project Design Phase 1
+    - [Proposed Solution](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/Proposed%20Solution.pdf)
 - Project Design Phase 2
 - Project Planning
