@@ -1,6 +1,6 @@
 # Assignment 01
 
-## M2 Lead - Yuvashree R
+## Team Member 2 - Yuvashree R
 
 ## Home Automation in TinkerCAD
 
