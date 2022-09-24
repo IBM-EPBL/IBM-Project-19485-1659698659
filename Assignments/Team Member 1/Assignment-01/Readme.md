@@ -1,6 +1,6 @@
 # Assignment 01
 
-## M1 Lead - Ulagaraja J
+## Team Member 1 - Ulagaraja J
 
 ## Home Automation in TinkerCAD
 

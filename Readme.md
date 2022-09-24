@@ -11,6 +11,7 @@
 #### Team Member 1
 - Ulagaraja J
     - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Member%201/Assignment-01/Readme.md)
+    - [Assignment 02 : Python Program to Simulate Sensor Values](./Assignments/Team%20Member%201/Assignment-02/Readme.md)
 #### Team Member 2
 - Yuvashree R
     - [Assignment 01 : Home Automation in TinkerCAD](./Assignments/Team%20Member%202/Assignment-01/Readme.md)
