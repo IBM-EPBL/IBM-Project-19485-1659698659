@@ -1,6 +1,6 @@
 # Assignment 01
 
-## M3 Lead - Yuvasri M
+## Team Member 3 - Yuvasri M
 
 ## Home Automation in TinkerCAD
 
