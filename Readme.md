@@ -37,6 +37,6 @@
 - Project Design Phase 1
     - [Proposed Solution](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/Proposed%20Solution.pdf)
     - [Solution Fit](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/ProblemFit.pdf)
-    - [Solution Architecture](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/SolutionArchitecture.png)
+    - [Solution Architecture](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/Solution%20Architecture%20Technical.pdf)
 - Project Design Phase 2
 - Project Planning
