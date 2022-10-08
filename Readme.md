@@ -39,4 +39,6 @@
     - [Solution Fit](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/ProblemFit.pdf)
     - [Solution Architecture](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/Solution%20Architecture%20Technical.pdf)
 - Project Design Phase 2
+    - [Customer Journey Map](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%202/CustomerJourneyMap.pdf)
+    - [Data Flow](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%202/dataFlow.pdf)
 - Project Planning
