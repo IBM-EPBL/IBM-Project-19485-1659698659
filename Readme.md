@@ -43,3 +43,4 @@
     - [Data Flow](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%202/dataFlow.png)
     - [Functional Requirement](./Project%20Design%20%26%20Planning/Project%20Design%20Phase%202/Solution%20Requirements.pdf)
 - Project Planning
+    - [Project & Sprint Delivery Plan](./Project%20Design%20%26%20Planning/Project%20Planning/ProjectPlanning.pdf)
