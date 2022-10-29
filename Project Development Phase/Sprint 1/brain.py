@@ -7,7 +7,7 @@ from datetime import datetime as dt
 
 # IMPORT SECTION ENDS
 # -----------------------------------------------
-# APP LOGIC SECTION STARTS
+# UTILITY LOGIC SECTION STARTS
 def processConditions(myLocation,APIKEY,localityInfo):
     weatherData = weather.get(myLocation,APIKEY)
 
@@ -27,11 +27,9 @@ def processConditions(myLocation,APIKEY,localityInfo):
             activeTime = [list(map(int,_.split(":"))) for _ in localityInfo["schools"]["activeTime"]]
             doNotHonk = activeTime[0][0]<=now[0]<=activeTime[1][0] and activeTime[0][1]<=now[1]<=activeTime[1][1]
 
-    outputObject = {
+    return({
         "speed" : finalSpeed,
         "doNotHonk" : doNotHonk
-    }
+    })
 
-    return(outputObject)
-
-# APP LOGIC SECTION ENDS
+# UTILITY LOGIC SECTION ENDS
