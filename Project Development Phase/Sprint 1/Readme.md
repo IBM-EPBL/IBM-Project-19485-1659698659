@@ -121,6 +121,6 @@ MICRO CONTROLLER CODE WILL BE ADDED IN SPRINT 2 AS PER OUR PLANNED SPRINT SCHEDU
 ```
 
 ### Images :
-
+![OutputImage](./outputImage.png)
 
 ### Thank You
