@@ -7,8 +7,12 @@
 ### Sprint Goals :
 1. Create and initialize accounts in various public
 APIs like OpenWeather API.
+
 1. Write a Python program that outputs results
 given the inputs like weather and location.
+
+### Code Flow :
+![codeFlow](./../../Project%20Design%20%26%20Planning/Project%20Design%20Phase%202/dataFlow.png)
 
 ### Program Code :
 ```python
@@ -23,6 +27,6 @@ given the inputs like weather and location.
 ```
 
 ### Images :
-![Raw Image](./Images/raw.png)
+
 
 ### Thank You
