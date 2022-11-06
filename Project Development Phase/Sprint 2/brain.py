@@ -4,12 +4,15 @@
 
 import weather
 from datetime import datetime as dt
+from publishData import logData2Cloud as log2cloud
 
 # IMPORT SECTION ENDS
 # -----------------------------------------------
 # UTILITY LOGIC SECTION STARTS
 def processConditions(myLocation,APIKEY,localityInfo):
     weatherData = weather.get(myLocation,APIKEY)
+
+    log2cloud(myLocation,weatherData["temperature"],weatherData["visibility"])
 
     finalSpeed = localityInfo["usualSpeedLimit"] if "rain" not in weatherData else localityInfo["usualSpeedLimit"]/2
     finalSpeed = finalSpeed if weatherData["visibility"]>35 else finalSpeed/2

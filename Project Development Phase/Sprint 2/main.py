@@ -23,8 +23,8 @@ localityInfo = {
 # USER INPUT SECTION ENDS
 # -----------------------------------------------
 # MICRO-CONTROLLER CODE STARTS
-
-print(brain.processConditions(myLocation,APIKEY,localityInfo))
+while True :
+    print(brain.processConditions(myLocation,APIKEY,localityInfo))
 
 '''
 MICRO CONTROLLER CODE WILL BE ADDED IN SPRINT 2 AS PER OUR PLANNED SPRINT SCHEDULE
