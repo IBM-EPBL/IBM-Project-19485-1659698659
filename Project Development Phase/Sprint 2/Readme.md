@@ -1,15 +1,11 @@
-# Sprint 01
+# Sprint 02
 
 ## Signs with Smart Connectivity for Better Road Safety
 
 ## Team ID - PNT2022TMID02450
 
 ### Sprint Goals :
-1. Create and initialize accounts in various public
-APIs like OpenWeather API.
-
-1. Write a Python program that outputs results
-given the inputs like weather and location.
+1. Push data from local code to cloud
 
 ### Code Flow :
 ![codeFlow](./../../Project%20Design%20%26%20Planning/Project%20Design%20Phase%202/dataFlow.png)
@@ -36,21 +32,68 @@ def get(myLocation,APIKEY):
     return(returnObject)
 ```
 
-#### [> brain.py](./brain.py)
-> This file is a utility function that returns only essential information to be displayed at the hardware side and abstracts all the unnecessary details. This is where the code flow logic is implemented.
+#### [> publishData.py](./publishData.py)
+> This code pushes data to the cloud and logs data. IBM Cloud is configured such that the data is displayed in the following website:
+**[CLICK TO OPEN NODE RED DASHBOARD](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/ui/#!/0?socketid=GTCCu99nK-_WLy8iAAAL)**
 ```python
 # Python code
 
 # IMPORT SECTION STARTS
 
-import weather
+import wiotp.sdk.device # python -m pip install wiotp
+import time
+
+# IMPORT SECTION ENDS
+# -----------------------------------------------
+# API CONFIG SECTION STARTS
+
+myConfig = {
+    "identity" : {
+        "orgId" : "epmoec",
+        "typeId" : "testDevice",
+        "deviceId" : "device0"
+    },
+    "auth" : {
+        "token" : "?-KDXUPMvDo_TK2&b1"
+    }
+}
+
+# API CONFIG SECTION ENDS
+# -----------------------------------------------
+# FUNCTIONS SECTION STARTS
+
+def myCommandCallback(cmd):
+    print("recieved cmd : ",cmd)
+
+
+def logData2Cloud(location,temperature,visibility):
+    client = wiotp.sdk.device.DeviceClient(config=myConfig,logHandlers=None)
+    client.connect()
+    client.publishEvent(eventId="status",msgFormat="json",data={
+        "temperature" : temperature,
+        "visibility" : visibility,
+        "location" : location
+    },qos=0,onPublish=None)
+    client.commandCallback = myCommandCallback
+    client.disconnect()
+    time.sleep(1)
+
+# FUNCTIONS SECTION ENDS
+```
+
+#### [> brain.py](./brain.py)
+> This file is a utility function that returns only essential information to be displayed at the hardware side and abstracts all the unnecessary details. This is where the code flow logic is implemented.
+```python
 from datetime import datetime as dt
+from publishData import logData2Cloud as log2cloud
 
 # IMPORT SECTION ENDS
 # -----------------------------------------------
 # UTILITY LOGIC SECTION STARTS
 def processConditions(myLocation,APIKEY,localityInfo):
     weatherData = weather.get(myLocation,APIKEY)
+
+    log2cloud(myLocation,weatherData["temperature"],weatherData["visibility"])
 
     finalSpeed = localityInfo["usualSpeedLimit"] if "rain" not in weatherData else localityInfo["usualSpeedLimit"]/2
     finalSpeed = finalSpeed if weatherData["visibility"]>35 else finalSpeed/2
@@ -104,8 +147,8 @@ localityInfo = {
 # USER INPUT SECTION ENDS
 # -----------------------------------------------
 # MICRO-CONTROLLER CODE STARTS
-
-print(brain.processConditions(myLocation,APIKEY,localityInfo))
+while True :
+    print(brain.processConditions(myLocation,APIKEY,localityInfo))
 
 '''
 MICRO CONTROLLER CODE WILL BE ADDED IN SPRINT 2 AS PER OUR PLANNED SPRINT SCHEDULE
@@ -117,10 +160,25 @@ MICRO CONTROLLER CODE WILL BE ADDED IN SPRINT 2 AS PER OUR PLANNED SPRINT SCHEDU
 ### Output :
 ```python
 # Code Output
+2022-11-06 21:38:33,452   wiotp.sdk.device.client.DeviceClient  INFO    Connected successfully: d:epmoec:testDevice:device0
+2022-11-06 21:38:33,452   wiotp.sdk.device.client.DeviceClient  INFO    Disconnected from the IBM Watson IoT Platform
+2022-11-06 21:38:33,452   wiotp.sdk.device.client.DeviceClient  INFO    Closed connection to the IBM Watson IoT Platform
 {'speed': 40, 'doNotHonk': False}
+2022-11-06 21:38:35,631   wiotp.sdk.device.client.DeviceClient  INFO    Connected successfully: d:epmoec:testDevice:device0
+2022-11-06 21:38:35,631   wiotp.sdk.device.client.DeviceClient  INFO    Disconnected from the IBM Watson IoT Platform
+2022-11-06 21:38:35,631   wiotp.sdk.device.client.DeviceClient  INFO    Closed connection to the IBM Watson IoT Platform
+{'speed': 40, 'doNotHonk': False}
+.
+.
+.
+... repeats every 1 sec
 ```
 
 ### Images :
+![OutputImage2](./outputImage2.png)
+
+---
+
 ![OutputImage](./outputImage.png)
 
 ### Thank You

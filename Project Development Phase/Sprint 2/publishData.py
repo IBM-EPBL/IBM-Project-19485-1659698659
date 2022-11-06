@@ -1,5 +1,13 @@
-import wiotp.sdk.device
+# Python code
+
+# IMPORT SECTION STARTS
+
+import wiotp.sdk.device # python -m pip install wiotp
 import time
+
+# IMPORT SECTION ENDS
+# -----------------------------------------------
+# API CONFIG SECTION STARTS
 
 myConfig = {
     "identity" : {
@@ -11,6 +19,10 @@ myConfig = {
         "token" : "?-KDXUPMvDo_TK2&b1"
     }
 }
+
+# API CONFIG SECTION ENDS
+# -----------------------------------------------
+# FUNCTIONS SECTION STARTS
 
 def myCommandCallback(cmd):
     print("recieved cmd : ",cmd)
@@ -27,3 +39,5 @@ def logData2Cloud(location,temperature,visibility):
     client.commandCallback = myCommandCallback
     client.disconnect()
     time.sleep(1)
+
+# FUNCTIONS SECTION ENDS
