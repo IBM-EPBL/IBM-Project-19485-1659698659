@@ -47,3 +47,4 @@
 
 ### Project Development Phase :
 - [Sprint 01](./Project%20Development%20Phase/Sprint%201/Readme.md)
+- [Sprint 02](./Project%20Development%20Phase/Sprint%202/Readme.md)

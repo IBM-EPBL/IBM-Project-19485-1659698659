@@ -158,6 +158,9 @@ MICRO CONTROLLER CODE WILL BE ADDED IN SPRINT 2 AS PER OUR PLANNED SPRINT SCHEDU
 ```
 
 ### Output :
+
+**[LINK TO NODE RED DASHBOARD](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/ui/#!/0?socketid=GTCCu99nK-_WLy8iAAAL)**
+
 ```python
 # Code Output
 2022-11-06 21:38:33,452   wiotp.sdk.device.client.DeviceClient  INFO    Connected successfully: d:epmoec:testDevice:device0
