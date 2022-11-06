@@ -1,0 +1,4 @@
+2022-11-06 19:33:00,915   ibmiotf.device.Client      INFO    Connected successfully: d:epmoec:testDevice:device0
+2022-11-06 19:35:07,235   ibmiotf.device.Client      INFO    Connected successfully: d:epmoec:testDevice:device0
+2022-11-06 19:41:39,548   ibmiotf.device.Client      INFO    Connected successfully: d:epmoec:testDevice:device0
+2022-11-06 19:42:06,827   ibmiotf.device.Client      INFO    Connected successfully: d:epmoec:testDevice:device0

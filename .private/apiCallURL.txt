@@ -1,0 +1,1 @@
+https://api.openweathermap.org/data/2.5/weather?q=Chennai,IN&appid=bf4a8d480ee05c00952bf65b78ae826b

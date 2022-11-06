@@ -1,0 +1,14 @@
+Organization ID
+epmoec
+
+Device Type
+testDevice
+
+Device ID
+device0
+
+Authentication Method
+use-token-auth
+
+Authentication Token
+?-KDXUPMvDo_TK2&b1
