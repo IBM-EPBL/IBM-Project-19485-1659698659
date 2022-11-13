@@ -157,8 +157,8 @@ return msg;
 3. **"setDirection Out"** node returns a http response for the request at node **"setDirection In"**.
 
 [Click on this link to change direction to Straight](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=s)
-[Click on this link to change direction to Left](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=s)
-[Click on this link to change direction to Right](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=s)
+[Click on this link to change direction to Left](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=l)
+[Click on this link to change direction to Right](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=r)
 
 ---
 
