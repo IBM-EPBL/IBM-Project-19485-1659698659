@@ -74,7 +74,7 @@
 ---
 
 ### Project Development Phase :
-- [Demo Video]("https://github.com/IBM-EPBL/IBM-Project-19485-1659698659/raw/master/Final%20Deliverables/demoVideo.mp4")
+- [Demo Video](https://github.com/IBM-EPBL/IBM-Project-19485-1659698659/raw/master/Final%20Deliverables/demoVideo.mp4)
 - [final Documentation](./Final%20Deliverables/finalDocs.pdf)
 
 ---
