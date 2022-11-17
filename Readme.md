@@ -70,3 +70,13 @@
 - [Sprint 02](./Project%20Development%20Phase/Sprint%202/Readme.md)
 - [Sprint 03](./Project%20Development%20Phase/Sprint%203/Readme.md)
 - [Sprint 04](./Project%20Development%20Phase/Sprint%204/Readme.md)
+
+---
+
+### Project Development Phase :
+- [Demo Video](./Final%20Deliverables/demoVideo.mp4)
+- [final Documentation](./Final%20Deliverables/finalDocs.pdf)
+
+---
+
+### THANK YOU

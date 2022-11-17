@@ -20,11 +20,12 @@
 #### Node RED flow :
 ![NodeRedCodeFlow](./codeFlow.png)
 
-There are 3 flows in the above Node RED flow. They are 
+There are 4 flows in the above Node RED flow. They are 
 
 1. Node RED UI flow
 1. /getSpeed API flow
 1. /setDirection API flow
+1. /set UI flow
 
 #### 1. Node RED UI flow :
 ![UI FLOW](./IOT_UI_FLOW.png)
@@ -155,6 +156,76 @@ return msg;
 ```
 
 3. **"setDirection Out"** node returns a http response for the request at node **"setDirection In"**.
+
+#### 3. /set UI flow :
+![UI FLOW2](./SET_UI_FLOW.png)
+
+1. **"setUI"** node is an http end point.
+
+2. **"template"** node is the HTML template to be rendered.
+```html
+<h1 style="width:max-content;margin:auto;display:block;">Change Directions Page</h1>
+
+<br><br>
+
+<style>
+    button{
+        padding:0.4rem 2.4rem;
+        margin:1rem;
+        background-color:#bbb;
+        border-radius:12px;
+        font-weight:bold;
+        color:black;
+        transition-timing-function: ease-in-out;
+        transition-duration:0.2s;
+    }
+    button:hover{
+        padding-right:3rem;
+        padding-left:3rem;
+    }
+</style>
+
+<div style="width:max-content;margin:auto;display:block;">
+    <div style="display:block;width:max-content;margin:auto;">
+        UID : <input type="number" value=2504 style="padding:1rem;" />
+    </div>
+    
+    <br><br>
+    
+    <button onclick="left()"> left </button>
+    <button onclick="straight()"> straight </button>
+    <button onclick="right()"> right </button>
+
+</div>
+
+<script>
+function right()
+{
+    fetch('https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=r')
+  .then((response) => {response.json();alert("success")})
+  .then((data) => console.log(data));    
+}
+
+function left()
+{
+    fetch('https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=l')
+  .then((response) => {response.json;alert("success")})
+  .then((data) => console.log(data));    
+}
+
+function straight()
+{
+    fetch('https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=s')
+  .then((response) => {response.json();alert("success")})
+  .then((data) => console.log(data));   
+}
+
+</script>
+```
+
+3. **"http"** node returns the template as a http response for the request at node **"setUI"**.
+
+**[Click on this link to change direction using UI](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/set)**
 
 **[Click on this link to change direction to Straight](https://node-red-grseb-2022-11-05-test.eu-gb.mybluemix.net/setDirection?uid=2504&dir=s)**
 
@@ -346,5 +417,8 @@ void loop() {
 ![out](./out3.png)
 ![out](./out4.png)
 ![out](./out5.png)
+![out](./out6.png)
+
+**[DEMO VIDEO LINK](./../../Final%20Deliverables/demoVideo.mp4)**
 
 ### Thank You
