@@ -419,6 +419,6 @@ void loop() {
 ![out](./out5.png)
 ![out](./out6.png)
 
-**[DEMO VIDEO LINK](./../../Final%20Deliverables/demoVideo.mp4)**
+**[DEMO VIDEO LINK]("https://github.com/IBM-EPBL/IBM-Project-19485-1659698659/raw/master/Final%20Deliverables/demoVideo.mp4")**
 
 ### Thank You
